@@ -7,6 +7,7 @@
 - `dahua-campus-flyover.blend`：可編輯 Blender 5.3 場景，含 12 秒、30 fps 的鏡頭路徑。
 - `dahua-campus.glb`：靜態場景，可匯入常見 3D 工具；動畫鏡頭以 `.blend` 為準。
 - `preview.png`：場景預覽。
+- `flyover-preview.mp4`：9 秒低解析度鏡頭動線預覽；正式動畫請由 `.blend` 重新渲染。
 - `build_scene.py`：程序化重建腳本，可重建或調整配置。
 - `assets/reference-aerial.jpeg`：使用者提供的原始照片。公開發布前請確認照片授權；若不具備公開再散布權利，可從 Git 追蹤中移除這個檔案。
 
