@@ -146,8 +146,10 @@ for frame,loc,target in [
     camera.location=loc; camera.rotation_euler=(Vector(target)-camera.location).to_track_quat('-Z','Y').to_euler()
     camera.keyframe_insert(data_path='location',frame=frame)
     camera.keyframe_insert(data_path='rotation_euler',frame=frame)
-scene.render.engine='BLENDER_EEVEE'
-scene.render.resolution_x=1280; scene.render.resolution_y=720; scene.render.resolution_percentage=100
+scene.render.engine='CYCLES'
+scene.cycles.device='CPU'
+scene.cycles.samples=12
+scene.render.resolution_x=1280; scene.render.resolution_y=720; scene.render.resolution_percentage=60
 scene.view_settings.view_transform='AgX'
 scene.camera.data.dof.use_dof=False
 scene.frame_set(160)
