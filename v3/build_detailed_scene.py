@@ -445,7 +445,7 @@ shots=[
  ('前棟拱廊與校舍',14,(-64,-77,4.0),(-36,-76,5.6),(-43,-48,4.2),(-38,-39,5),34),
  ('教學區水池',15,(-35,-40,2.4),(-18,-39,3.0),(-26,-28,1.7),(-27,-23,3.8),28),
  ('教學區外觀',12,(-36,-36,10.0),(21,-36,12.4),(-22,-6,5.7),(17,-6,5.8),32),
- ('定得樓圓角立面',12,(-10,52,5.0),(31,53,7.0),(9,75,7),(25,75,7.5),32),
+ ('定得樓圓角立面',12,(-10,52,5.0),(25,61,7.0),(9,75,7),(25,75,7.5),32),
  ('下沉操場與階梯',11,(86,-43,10),(130,-8,4),(65,8,-2),(79,12,-2),27),
  ('校園收束全景',6,(183,24,95),(171,114,137),(15,15,0),(15,20,0),32),
 ]
@@ -479,6 +479,12 @@ for ob in list(bpy.data.objects):
 for cu in list(bpy.data.curves):
  if cu.users==0:bpy.data.curves.remove(cu)
 for f in list(bpy.data.fonts):bpy.data.fonts.remove(f,do_unlink=True)
+# Open directly in the gym camera view for a reviewable saved workspace.
+for screen in bpy.data.screens:
+ for area in screen.areas:
+  if area.type=='VIEW_3D':
+   area.spaces.active.region_3d.view_perspective='CAMERA'
+   area.spaces.active.shading.color_type='MATERIAL'
 # Scene uses procedural materials and geometry; no external dependencies.
 bpy.ops.wm.save_as_mainfile(filepath=os.path.join(ROOT,'dahua-campus-v3.blend'))
 with open(os.path.join(ROOT,'shots.json'),'w') as f:json.dump(manifest,f,ensure_ascii=False,indent=2)

@@ -11,8 +11,10 @@
 - 操場改為下沉場地，加入西側看台階梯、通行階梯、扶手與周邊擋土牆。
 - 八段鏡頭涵蓋全景、凱旋樓、前棟、水池、教學樓、定得樓、下沉操場及收束全景。
 
-## 可編輯檔案
+## 影片與可編輯檔案
 
+- `dahua-campus-94s-v3.mp4`：已完成的 94 秒 Full HD 影片。
+- `verification.json`：2256 格／24 fps／94 秒／1080p 與完整解碼檢查結果。
 - `dahua-campus-v3.blend`：完整場景、材質、可編輯中文字樣幾何與相機動畫。
 - `build_detailed_scene.py`：重建完整模型。
 - `render_video.py`：Blender 渲染後逐格串流至 FFmpeg，避免大量暫存影格。
@@ -21,7 +23,7 @@
 
 ## 來源與精確度
 
-使用者提供的照片與影片為主要依據。網路參考為歷史照片：[Commons 校園圖集](https://commons.wikimedia.org/wiki/Category:Ta_Hwa_High_School)、[凱旋樓](https://commons.wikimedia.org/wiki/File:大華中學_凱旋樓_-_panoramio.jpg)、[定得樓](https://commons.wikimedia.org/wiki/File:大華中學_定得樓_-_panoramio.jpg)。取得的原圖為 2816×2112，網路原圖留在本地參考資料夾，Git 保留來源索引與使用者提供素材。
+使用者提供的照片與影片為主要依據。原始空拍影片保存於 `../assets/reference-drone.mp4`；本次觀察從 00:16 開始，搭配 v2 的多角度擷取影格。網路參考為歷史照片：[Commons 校園圖集](https://commons.wikimedia.org/wiki/Category:Ta_Hwa_High_School)、[凱旋樓](https://commons.wikimedia.org/wiki/File:大華中學_凱旋樓_-_panoramio.jpg)、[定得樓](https://commons.wikimedia.org/wiki/File:大華中學_定得樓_-_panoramio.jpg)。取得的原圖為 2816×2112，網路原圖留在本地參考資料夾，Git 保留來源索引與使用者提供素材。
 
 本模型為參考影像重建的建築視覺化。沒有測量、施工圖或地形資料，建築尺度、位置、操場下沉深度（約 4.8 公尺）、遮蔽部位與細部配置仍為推估；不是測繪或照片級數位孿生。校舍外觀採可編輯幾何與程序材質，沒有直接貼上含人物的來源照片。
 

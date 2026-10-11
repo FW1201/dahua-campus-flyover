@@ -1,0 +1,13 @@
+{
+  "video": "dahua-campus-94s-v3.mp4",
+  "duration_seconds": 94.0,
+  "frames": 2256,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "codec": "h264",
+  "full_decode_passed": true,
+  "video_sha256": "9e1938b29a92e722c950431315f8c1bf7a96ff425f29b0360c0e3897fd242d02",
+  "model_sha256": "c4c7541d13b26357f44fcda5a7408cedc14e98ff31bed98747da96201b52520a",
+  "geometry_accuracy": "Reference-image reconstruction; metric dimensions and stadium depth inferred."
+}
