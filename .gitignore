@@ -5,3 +5,6 @@ __pycache__/
 v3/reference/commons-*
 v3/.current-frame.png
 v3/encode.log
+
+v4/.current-frame.png
+v4/encode.log

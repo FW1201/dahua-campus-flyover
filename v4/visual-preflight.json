@@ -1,0 +1,14 @@
+{
+  "shots": 13,
+  "start_middle_end_previews": 39,
+  "known_obstructions_corrected": [
+    "Gate lettering transform",
+    "Courtyard canopy crossing",
+    "Deding neighbouring building",
+    "Primary tree at shot end"
+  ],
+  "corridor_glazing": "clear-pane proxy; metric planar UV tiles",
+  "review": "Rendered all shot starts, midpoints and endpoints; visual reconstruction remains approximate.",
+  "model_sha256": "e2e50dfa39ef5ff81b5987515f9a576e7a2c0ac2e7a9f51d0c9d1d7ac2d485fd",
+  "reviewed_preview_count": 39
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "name": "校園配置全景",
+    "start": 1,
+    "end": 216,
+    "seconds": 9
+  },
+  {
+    "name": "校門銘牌與門扇",
+    "start": 217,
+    "end": 360,
+    "seconds": 6
+  },
+  {
+    "name": "前庭孔子像",
+    "start": 361,
+    "end": 456,
+    "seconds": 4
+  },
+  {
+    "name": "德賢樓與風雨走廊",
+    "start": 457,
+    "end": 672,
+    "seconds": 9
+  },
+  {
+    "name": "凱旋樓面向草地的入口",
+    "start": 673,
+    "end": 888,
+    "seconds": 9
+  },
+  {
+    "name": "教學區水池與庭園",
+    "start": 889,
+    "end": 1152,
+    "seconds": 11
+  },
+  {
+    "name": "四層校舍窗帶與端面",
+    "start": 1153,
+    "end": 1392,
+    "seconds": 10
+  },
+  {
+    "name": "教學區一樓走廊內景",
+    "start": 1393,
+    "end": 1584,
+    "seconds": 8
+  },
+  {
+    "name": "定得樓圓角、窗柵與冷氣",
+    "start": 1585,
+    "end": 1824,
+    "seconds": 10
+  },
+  {
+    "name": "後側雙語小學弧形校舍",
+    "start": 1825,
+    "end": 1992,
+    "seconds": 7
+  },
+  {
+    "name": "看台俯視操場高差",
+    "start": 1993,
+    "end": 2088,
+    "seconds": 4
+  },
+  {
+    "name": "下沉操場與斜柱遮棚",
+    "start": 2089,
+    "end": 2160,
+    "seconds": 3
+  },
+  {
+    "name": "收束校園全景",
+    "start": 2161,
+    "end": 2256,
+    "seconds": 4
+  }
+]
