@@ -1,0 +1,169 @@
+{
+  "sample_count": 27,
+  "stance_sole_max_absolute_error_m": 0.00768,
+  "samples": [
+    {
+      "frame": 1321,
+      "rig": "Student 44 | junior",
+      "foot": "L",
+      "sole_error_m": -0.00335
+    },
+    {
+      "frame": 1321,
+      "rig": "Student 45 | senior-formal",
+      "foot": "L",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1321,
+      "rig": "Student 45 | senior-formal",
+      "foot": "R",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1321,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "L",
+      "sole_error_m": -0.00768
+    },
+    {
+      "frame": 1321,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "R",
+      "sole_error_m": -0.00768
+    },
+    {
+      "frame": 1326,
+      "rig": "Student 44 | junior",
+      "foot": "R",
+      "sole_error_m": -0.00335
+    },
+    {
+      "frame": 1326,
+      "rig": "Student 45 | senior-formal",
+      "foot": "R",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1326,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "R",
+      "sole_error_m": -0.00768
+    },
+    {
+      "frame": 1331,
+      "rig": "Student 44 | junior",
+      "foot": "R",
+      "sole_error_m": -0.00335
+    },
+    {
+      "frame": 1331,
+      "rig": "Student 45 | senior-formal",
+      "foot": "R",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1331,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "R",
+      "sole_error_m": -0.00768
+    },
+    {
+      "frame": 1336,
+      "rig": "Student 44 | junior",
+      "foot": "R",
+      "sole_error_m": -0.00335
+    },
+    {
+      "frame": 1336,
+      "rig": "Student 45 | senior-formal",
+      "foot": "L",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1336,
+      "rig": "Student 45 | senior-formal",
+      "foot": "R",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1336,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "L",
+      "sole_error_m": -0.00768
+    },
+    {
+      "frame": 1336,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "R",
+      "sole_error_m": -0.00768
+    },
+    {
+      "frame": 1341,
+      "rig": "Student 44 | junior",
+      "foot": "L",
+      "sole_error_m": -0.00335
+    },
+    {
+      "frame": 1341,
+      "rig": "Student 45 | senior-formal",
+      "foot": "L",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1341,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "L",
+      "sole_error_m": -0.00768
+    },
+    {
+      "frame": 1346,
+      "rig": "Student 44 | junior",
+      "foot": "L",
+      "sole_error_m": -0.00335
+    },
+    {
+      "frame": 1346,
+      "rig": "Student 45 | senior-formal",
+      "foot": "L",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1346,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "L",
+      "sole_error_m": -0.00768
+    },
+    {
+      "frame": 1351,
+      "rig": "Student 44 | junior",
+      "foot": "L",
+      "sole_error_m": -0.00335
+    },
+    {
+      "frame": 1351,
+      "rig": "Student 45 | senior-formal",
+      "foot": "L",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1351,
+      "rig": "Student 45 | senior-formal",
+      "foot": "R",
+      "sole_error_m": -0.00173
+    },
+    {
+      "frame": 1351,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "L",
+      "sole_error_m": -0.00768
+    },
+    {
+      "frame": 1351,
+      "rig": "Student 46 | primary-sailor",
+      "foot": "R",
+      "sole_error_m": -0.00768
+    }
+  ],
+  "note": "Sampled sole positions, supporting stance only; this does not prove every footstep or all scene collisions."
+}

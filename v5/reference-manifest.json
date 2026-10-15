@@ -1,0 +1,92 @@
+[
+  {
+    "path": "reference/official-school-03.jpg",
+    "bytes": 346108,
+    "sha256": "321dd89c0bd060f3208e7aadbc38f76a144c3594998733bf6acf719a65ca62a0"
+  },
+  {
+    "path": "reference/official-school-04.jpg",
+    "bytes": 220956,
+    "sha256": "8e20bc75dce6d4008c1e1dafb6a5ef30cab67103886a67dfd5fb87ff4b51a247"
+  },
+  {
+    "path": "reference/official-school-05.jpg",
+    "bytes": 195890,
+    "sha256": "835b1a365d6eeb6d0a394a492b4210167858a982ccb7bcc12db88b29ad0a589f"
+  },
+  {
+    "path": "reference/official-school-06.jpg",
+    "bytes": 91348,
+    "sha256": "b5f426b313bc8f78c116adf5958d48f261457fc015662237d0c0ba1e0a29ce8b"
+  },
+  {
+    "path": "reference/official-school-07.jpg",
+    "bytes": 317368,
+    "sha256": "fe62f4a0fd7942580b6f46960015dd49dd1ce476a43190ed81f2f5e58ad23d3b"
+  },
+  {
+    "path": "reference/official-school-08.jpg",
+    "bytes": 435307,
+    "sha256": "48dea055a4cc3e18b47999d8d76c91182b07cfc08c59855829b50c641801e8f2"
+  },
+  {
+    "path": "reference/official-school-09.jpg",
+    "bytes": 238755,
+    "sha256": "6515d4ca0881a7a110184fb81f789cc0d9aa1717d1c69c3caa67f027e6d09c23"
+  },
+  {
+    "path": "reference/official-school-10.jpg",
+    "bytes": 142566,
+    "sha256": "940e0bef3b0dc17e12e351a76d1353a6f83d2d7432131e8fc66d679000144ffb"
+  },
+  {
+    "path": "reference/primary-activity.jpg",
+    "bytes": 3258557,
+    "sha256": "0bf2e5697b54788c1ce51dea41b0d5c3db98d81d369c3ebcb21f7463cb8031f1"
+  },
+  {
+    "path": "reference/primary-drill.jpg",
+    "bytes": 1362849,
+    "sha256": "b3f8ae14f936d2815d0e440972872b0d004d5307f8ce24683b5b69c03d8d44b2"
+  },
+  {
+    "path": "reference/provided/前庭外環風雨走廊.jpg",
+    "bytes": 111953,
+    "sha256": "2ea5fe31ab773240e236cc9e8934a4bb99fc847150d04e1db061aede4204036b"
+  },
+  {
+    "path": "reference/provided/前庭行政樓細節.jpeg",
+    "bytes": 35058,
+    "sha256": "4eb80c18f3c35eac51ee4e4d5e7025e1b14541361580ece549d4e54dcc00676b"
+  },
+  {
+    "path": "reference/provided/小學部_校方網站立面參考.jpg",
+    "bytes": 150840,
+    "sha256": "c6b5eea2ce3dfee283a92971361f87b6748e4c69ea72f9b89c9abcea4efc6a6c"
+  },
+  {
+    "path": "reference/provided/操場圖片.jpg",
+    "bytes": 111429,
+    "sha256": "5c34f58aa0a0aed54004f47d41456ad77989f06d2c2753b13f7cf790960e79bc"
+  },
+  {
+    "path": "reference/provided/教室內部空間細節.jpeg",
+    "bytes": 42118,
+    "sha256": "e924f7f192ad9f2e152863524dd76234c290aa05773fc1009083025dcf7dd1b2"
+  },
+  {
+    "path": "reference/provided/校門口孔子雕像.jpeg",
+    "bytes": 36109,
+    "sha256": "b88a35aed4c520eab29b6dac42b5b06c8bf267249fd0e39e9ba99f984f8cc91a"
+  },
+  {
+    "path": "reference/provided/校門圖片細節.jpeg",
+    "bytes": 30819,
+    "sha256": "cbd7b6aaeb3770e8cb7a28a295eb888787519e054d78d5da89252eacb1cf0ee5"
+  },
+  {
+    "path": "reference/provided/空拍校地.jpg",
+    "bytes": 191746,
+    "sha256": "a38ca894bf63f95b48c159fcdfe2815fa6481f12a4d6f4f85fb0a5d542c1de61"
+  }
+]

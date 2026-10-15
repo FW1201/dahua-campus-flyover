@@ -11,3 +11,6 @@ v4/encode.log
 
 # Recoverable intermediate stream during animation rendering
 v4/*.render.ts
+
+# v5 resumable render intermediates
+v5/.render/

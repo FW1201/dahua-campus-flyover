@@ -1,0 +1,139 @@
+{
+  "visible_map_scale": {
+    "metres": 20,
+    "pixels": 84
+  },
+  "local_origin_viewport_pixels": [
+    1000,
+    500
+  ],
+  "building_footprints": {
+    "south": [
+      -11.7,
+      -7.4,
+      68.8,
+      12.5,
+      4
+    ],
+    "north": [
+      -13.1,
+      30.0,
+      53.0,
+      12.6,
+      4
+    ],
+    "cross": [
+      -12.0,
+      12.0,
+      32,
+      24,
+      3
+    ],
+    "front": [
+      -10.7,
+      -34.0,
+      12.5,
+      26,
+      2
+    ],
+    "admin": [
+      29.8,
+      -39.0,
+      28.5,
+      14,
+      2
+    ],
+    "gym": [
+      73.8,
+      -82.1,
+      22.5,
+      30,
+      1
+    ],
+    "deding": [
+      -0.7,
+      87.6,
+      43,
+      29,
+      4
+    ],
+    "west": [
+      -78.5,
+      80.5,
+      31,
+      18,
+      4
+    ],
+    "service": [
+      0,
+      58,
+      10,
+      17,
+      4
+    ]
+  },
+  "primary_school": {
+    "anchor_existing_deding": [
+      -0.7,
+      87.6
+    ],
+    "rear_view_anchor_pixels": [
+      799,
+      696
+    ],
+    "scale_metres": 20,
+    "scale_pixels": 72,
+    "roof_outline_pixels": [
+      [
+        575,
+        550
+      ],
+      [
+        592,
+        540
+      ],
+      [
+        624,
+        531
+      ],
+      [
+        671,
+        533
+      ],
+      [
+        715,
+        542
+      ],
+      [
+        758,
+        557
+      ],
+      [
+        748,
+        591
+      ],
+      [
+        711,
+        578
+      ],
+      [
+        669,
+        575
+      ],
+      [
+        625,
+        579
+      ],
+      [
+        590,
+        592
+      ]
+    ],
+    "floors": 3,
+    "height_estimate": 10.5,
+    "unseen_facades": "inferred"
+  },
+  "track_rotation_degrees": 32,
+  "sunken_depth_inferred_metres": 3.2,
+  "source": "Inherited v4 manual trace of user-opened Google Maps inspected 2026-10-15; v5 reconnection could not read imagery; acquisition date unknown."
+}

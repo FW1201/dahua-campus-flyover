@@ -1,0 +1,13 @@
+{
+  "reported_times_seconds": [
+    72,
+    82
+  ],
+  "repairs": [
+    "Deding enclosed infill, floor edges, lobby and window reveals",
+    "Primary tangent-aligned window assemblies and closed slab edges"
+  ],
+  "signage": "Noto CJK Bold 700; solid extruded bevelled cast letters, 0.085 times letter height depth; converted to meshes",
+  "screen_space_reflection": "disabled for stable glazing; opaque proxy panels with physically modelled frames",
+  "limits": "Metric dimensions, hidden rooms and wall details remain inferred from photographs."
+}
