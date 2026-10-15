@@ -63,7 +63,24 @@
     1969,
     2040
   ],
-  "final_model_sha256": "58b8219a85cabb12ef410c7ba53b066576d0d1292ca9339050582eda8e430559",
-  "review": "Reviewed 15-shot triptychs. After final roof seam and foot-surface refinements, reviewed seven full-resolution 2560x1440 proof frames. Main camera volumes audited for all 2256 frames; two intended walking closeups and the corridor also visibly reviewed.",
-  "limits": "Not an exhaustive per-frame geometry or character collision proof."
+  "review": "Reviewed 15-shot triptychs. After final roof seam and foot-surface refinements, reviewed seven full-resolution 2560x1440 proof frames. Main camera volumes audited for all 2256 frames; two intended walking closeups and the corridor also visibly reviewed. After a successful same-Chrome Maps refresh, added rear parking, east parking markings and the primary oval island; rendered ten affected-shot proof frames and visually reviewed opening, primary facade and final overhead views.",
+  "limits": "Not an exhaustive per-frame geometry or character collision proof.",
+  "full_resolution_proof_model_sha256_before_maps_refresh": "58b8219a85cabb12ef410c7ba53b066576d0d1292ca9339050582eda8e430559",
+  "final_model_sha256": "2d3661158bec146d28193e5bb2f99593e1052b94e91c2c0f1b10416d1a9bb223",
+  "maps_refresh_proof_frames": [
+    1,
+    108,
+    216,
+    1825,
+    1872,
+    1920,
+    1969,
+    2161,
+    2208,
+    2256
+  ],
+  "maps_refresh_proof_resolution": [
+    1792,
+    1008
+  ]
 }

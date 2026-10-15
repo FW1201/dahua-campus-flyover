@@ -1,0 +1,35 @@
+{
+  "status": "reconnected in same Chrome using fresh task tab, after original tab could not attach",
+  "viewed_satellite": [
+    "24.8829755,121.1737362,222m",
+    "24.8842966,121.1736917,240m"
+  ],
+  "map_scale": "20m visible scale; approximately 72 screen pixels in rear view",
+  "rear_parking": {
+    "centre": [
+      -91.4,
+      126
+    ],
+    "approx_size": [
+      27,
+      43
+    ],
+    "angle_degrees": 13,
+    "drawn_stall_count_is_not_an_official_capacity": true
+  },
+  "primary_oval_island": {
+    "centre": [
+      -40.4,
+      111.2
+    ],
+    "approx_radii": [
+      3.25,
+      2.65
+    ]
+  },
+  "photo_checks": [
+    "Maps school gallery photo1: forecourt, administrative building, canopy, 2024-09, 行政盧玉麟",
+    "Maps photo2: sunken stadium, white upper rails, stair-end arches and slanted canopy, 2024-09, 行政盧玉麟"
+  ],
+  "imagery_acquisition_date": "unknown; copyright year is not capture date"
+}

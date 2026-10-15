@@ -237,3 +237,48 @@ for j in range(58):
  yy=-47.5+j*.47
  for side in (-1,1):cylinder(b,(-10.7+side*6.75,yy,6.725),(-10.7,yy,9.025),.015,'roofcap',6)
 b.finish()
+# Additional current-Maps observations after the browser connection recovered:
+# west primary parking, an oval planted island and the outer east parking lane.
+def parking_xy(u,v):
+ a=math.radians(13);return(-91.4+math.cos(a)*u-math.sin(a)*v,126.0+math.sin(a)*u+math.cos(a)*v)
+b=Mesh('Maps V5 rear primary school parking stalls');a=math.radians(13)
+obox(b,-91.4,126,.055,27,43,.11,a,'asphalt')
+for side in (-1,1):
+ for j in range(15):
+  vv=-18.75+j*2.5;p0=parking_xy(side*6.0,vv);p1=parking_xy(side*12.7,vv)
+  line('Rear parking white stall lines',[(*p0,.13),(*p1,.13)],.035,'line')
+ for j in (-18.75,16.25):
+  p0=parking_xy(side*6.0,j);p1=parking_xy(side*6.0,j+2.5);line('Rear parking end lines',[(*p0,.13),(*p1,.13)],.035,'line')
+for side in (-1,1):
+ pts=[(*parking_xy(side*13,v),.14) for v in [-21.5+j*.5 for j in range(87)]];line('Rear parking curb',pts,.095,'concrete')
+b.finish()
+# A small number of generic parked vehicles provide scale; placement is illustrative.
+def parked_car(name,x,y,angle,paint='cardark'):
+ b=Mesh(name);obox(b,x,y,.53,1.78,4.35,.60,angle,paint);obox(b,x,y+.05,1.08,1.50,2.30,.64,angle,'glass');obox(b,x,y+.05,1.43,1.43,2.00,.08,angle,paint)
+ for side in (-1,1):
+  for front in (-1,1):
+   dx=side*.89;dy=front*1.36;c,s=math.cos(angle),math.sin(angle);p=(x+c*dx-s*dy,y+s*dx+c*dy,.35);axis=Vector((c,s,0));cylinder(b,Vector(p)-axis*.10,Vector(p)+axis*.10,.29,'seal',16)
+ for end in (-1,1):
+  for side in (-1,1):
+   dx=side*.61;dy=end*2.19;c,s=math.cos(angle),math.sin(angle);obox(b,x+c*dx-s*dy,y+s*dx+c*dy,.61,.36,.055,.13,angle,'white' if end<0 else 'redletter')
+ b.finish()
+for j,(side,v) in enumerate([(-1,-15),(-1,-5),(1,-10),(1,0),(1,10),(-1,15)]):
+ x,y=parking_xy(side*9.2,v);parked_car('Generic parked campus car',x,y,math.radians(13)+math.pi/2,'carwhite' if j%3==0 else 'cardark')
+# Oval island south of primary entrance, visible in the recovered satellite view.
+ix,iy=-40.4,111.2;pts=[(ix+3.25*math.cos(t*math.tau/96),iy+2.65*math.sin(t*math.tau/96)) for t in range(96)]
+polygon('Maps V5 primary oval planted island',pts,.17,'grass');line('Primary oval island concrete edging',[(x,y,.20) for x,y in pts],.12,'concrete',True)
+shrub('Primary island planting',ix,iy,3.5,1.8,.55)
+# Outer east parking aligns with the already calibrated east-side road segment.
+a=Vector(xy(1453,643));c=Vector(xy(1660,535));t=(c-a).normalized();normal=Vector((t.y,-t.x));length=(c-a).length
+ribbon('Maps V5 east parking paved apron',[tuple(a+normal*3),tuple(c+normal*3)],9,.11,'asphalt')
+for j in range(int(length/2.6)+1):
+ p=a+t*j*2.6+normal*2.0;q=p+normal*4.6;line('East parking white bay marking',[(*p,.15),(*q,.15)],.032,'line')
+# Recorded map observations are approximate traced dimensions, not measured parking capacity.
+MAPS_REFRESH_V5={'status':'reconnected in same Chrome using fresh task tab, after original tab could not attach','viewed_satellite':['24.8829755,121.1737362,222m','24.8842966,121.1736917,240m'],'map_scale':'20m visible scale; approximately 72 screen pixels in rear view','rear_parking':{'centre':[-91.4,126],'approx_size':[27,43],'angle_degrees':13,'drawn_stall_count_is_not_an_official_capacity':True},'primary_oval_island':{'centre':[-40.4,111.2],'approx_radii':[3.25,2.65]},'photo_checks':['Maps school gallery photo1: forecourt, administrative building, canopy, 2024-09, 行政盧玉麟','Maps photo2: sunken stadium, white upper rails, stair-end arches and slanted canopy, 2024-09, 行政盧玉麟'],'imagery_acquisition_date':'unknown; copyright year is not capture date'}
+with open(os.path.join(ROOT,'maps-refresh-observations.json'),'w') as f:json.dump(MAPS_REFRESH_V5,f,ensure_ascii=False,indent=2)
+
+for ob in list(bpy.data.objects):
+ if not ob.name.startswith('Landscape tree'):continue
+ x,y=ob.location.x,ob.location.y;dx,dy=x+91.4,y-126;aa=math.radians(13);u=math.cos(aa)*dx+math.sin(aa)*dy;v=-math.sin(aa)*dx+math.cos(aa)*dy
+ q=Vector((x,y))-a;along=q.dot(t);across=q.dot(normal)
+ if (abs(u)<14.5 and abs(v)<22.5) or (-2<along<length+2 and 0<across<10):bpy.data.objects.remove(ob,do_unlink=True)
