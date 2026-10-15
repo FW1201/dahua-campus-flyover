@@ -1,0 +1,19 @@
+{
+  "source_video": "../dahua-campus-94s-v5.mp4",
+  "source_music": "dahua-school-song.mp3",
+  "source_music_sha256": "d6f11aca59c41fe711efa51df87afb4e8a11ae67200a1943d09358274f63e6ec",
+  "source_music_duration_seconds": 94.066938,
+  "duration_seconds": 94,
+  "fps": 24,
+  "cover_seconds": [
+    0,
+    6.5
+  ],
+  "cover_fadeout_seconds": 0.75,
+  "lyrics": "lyrics.ass",
+  "font": "../fonts/NotoSansCJKtc-Bold.otf",
+  "audio_gain_db": 2.5,
+  "audio_peak_source_dbtp": -4.36,
+  "audio_fade_out_seconds": 0.35,
+  "music_speed": 1.0
+}

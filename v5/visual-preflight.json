@@ -82,5 +82,15 @@
   "maps_refresh_proof_resolution": [
     1792,
     1008
-  ]
+  ],
+  "encoded_video_review": {
+    "source": "dahua-campus-94s-v5.mp4",
+    "frames": 32,
+    "contacts": [
+      "video-review/all-shot-midpoints.jpg",
+      "video-review/reported-issue-intervals.jpg",
+      "video-review/walking-sequence.jpg"
+    ],
+    "review": "Inspected all15 midpoint frames, issue windows71.5/72/72.5 and81.5/82/82.5, plus walking sequences. No missing/overlapping facade panels visible in these samples. Faceless walking rigs remain stylized."
+  }
 }

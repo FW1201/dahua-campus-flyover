@@ -1,0 +1,55 @@
+{
+  "video": "dahua-campus-94s-v5-school-song.mp4",
+  "duration_seconds": 94,
+  "width": 2560,
+  "height": 1440,
+  "fps": 24,
+  "frames": 2256,
+  "audio_codec": "aac",
+  "audio_sample_rate": 44100,
+  "audio_channels": 2,
+  "full_decode_passed": true,
+  "audio_sync_checks": [
+    {
+      "source_window_seconds": [
+        13,
+        18
+      ],
+      "audio_lag_seconds": 0.0,
+      "correlation": 0.999697
+    },
+    {
+      "source_window_seconds": [
+        43,
+        48
+      ],
+      "audio_lag_seconds": 0.0,
+      "correlation": 0.999884
+    },
+    {
+      "source_window_seconds": [
+        80,
+        85
+      ],
+      "audio_lag_seconds": 0.0,
+      "correlation": 0.999689
+    }
+  ],
+  "video_sha256": "38976f051fe45cd05c5b9475de4764d54b117bf57eb5d8efc4d958ef177d4ef5",
+  "base_video_sha256": "83a37ed0ed67e65def325676750887c8c2259ff2a4ef2e5aa8cf52ea36f83bb3",
+  "model_sha256": "2d3661158bec146d28193e5bb2f99593e1052b94e91c2c0f1b10416d1a9bb223",
+  "source_music_sha256": "d6f11aca59c41fe711efa51df87afb4e8a11ae67200a1943d09358274f63e6ec",
+  "lyric_timing_file": "music/lyrics-timing.json",
+  "lyric_timing_limit": "Automatic phrase alignment, corrected to supplied text. Not human-listened or phoneme-exact verification.",
+  "visual_review": {
+    "sample_count": 21,
+    "all_18_lyric_groups_checked": true,
+    "contact": "music/lyrics-review.jpg",
+    "notes": "Cover appears and fades; all cue groups are readable without missing Chinese glyphs, and inset lyric panels stay within frame."
+  },
+  "measured_audio": {
+    "integrated_lufs": -16.77,
+    "true_peak_dbtp": -1.9,
+    "loudness_range_lu": 9.5
+  }
+}

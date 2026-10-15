@@ -1,0 +1,97 @@
+{
+  "method": "Local whisper.cpp large-v3, flash attention off, DTW; phrase timing corrected to user-provided lyrics; artificial prompt repeats excluded.",
+  "vocal_first_dtw_peak_seconds": 12.98,
+  "timing_limit": "Phrase-level alignment from automatic vocal attention; no claim of phoneme-exact or human-listened verification.",
+  "cues": [
+    {
+      "start": 12.78,
+      "end": 18.98,
+      "text": "老柏凌霜挺"
+    },
+    {
+      "start": 18.98,
+      "end": 23.8,
+      "text": "寒梅傲雪香"
+    },
+    {
+      "start": 23.8,
+      "end": 29.45,
+      "text": "大華精神日月同光"
+    },
+    {
+      "start": 29.45,
+      "end": 34.85,
+      "text": "重建樂宮於峻嶺"
+    },
+    {
+      "start": 34.85,
+      "end": 37.65,
+      "text": "境教益彰"
+    },
+    {
+      "start": 37.65,
+      "end": 42.95,
+      "text": "長城雄壯"
+    },
+    {
+      "start": 42.95,
+      "end": 48.78,
+      "text": "看，校旗矞麗飛揚"
+    },
+    {
+      "start": 48.78,
+      "end": 51.37,
+      "text": "桃李競妍"
+    },
+    {
+      "start": 51.37,
+      "end": 54.3,
+      "text": "白鷗戲水"
+    },
+    {
+      "start": 54.3,
+      "end": 59.6,
+      "text": "冰潔蓮芳"
+    },
+    {
+      "start": 59.6,
+      "end": 64.95,
+      "text": "聽，弦歌唱書聲香"
+    },
+    {
+      "start": 64.95,
+      "end": 67.65,
+      "text": "山嶽和應"
+    },
+    {
+      "start": 67.65,
+      "end": 70.05,
+      "text": "長江浩蕩"
+    },
+    {
+      "start": 70.05,
+      "end": 75.16,
+      "text": "遠播八荒"
+    },
+    {
+      "start": 75.16,
+      "end": 80.48,
+      "text": "想，名駒伯樂心神振"
+    },
+    {
+      "start": 80.48,
+      "end": 83.25,
+      "text": "五育陶養"
+    },
+    {
+      "start": 83.25,
+      "end": 86.35,
+      "text": "黃河綿長"
+    },
+    {
+      "start": 86.35,
+      "end": 94.0,
+      "text": "教育瑤章"
+    }
+  ]
+}

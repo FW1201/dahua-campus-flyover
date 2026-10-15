@@ -1,6 +1,14 @@
 # v5：立面修補、粗體招牌與匿名學生步行
 
-> 模型和預檢已完成；94 秒影片輸出中，完稿檔與驗證紀錄將在完成後加入。
+**已完成：94 秒／2560×1440／24 fps**。含大華中學片頭封面、使用者提供的原速校歌與 18 組分句繁體歌詞。
+
+- [校歌字幕版影片](dahua-campus-94s-v5-school-song.mp4)
+- [封面](music/大華中學_封面.jpg)
+- [可編輯 Blender 模型](dahua-campus-v5.blend)
+- [字幕 SRT](music/lyrics.srt)／[字幕 ASS](music/lyrics.ass)／[分句時間](music/lyrics-timing.json)
+- [成片驗證](school-song-verification.json)
+
+![大華中學封面](music/大華中學_封面.jpg)
 
 維持日景、1:34；提高至 2560×1440、24 fps，2256 個原生畫格，15 段鏡頭。Blender 5.4 Alpha / Eevee / 32 samples / AgX。
 
@@ -23,7 +31,10 @@
 - `shots.json`、`camera-audit.json`、`architecture-repairs.json`、`gait-contact-audit.json`、`student-animation-manifest.json`：鏡頭、修補與角色資料。
 - `SOURCES.md`、`reference/`、`reference-manifest.json`：來源與服裝判定限制。
 - `previews/`：全部鏡頭起、中、終點及問題區間的實際渲染預覽。
-- 完稿後提供 `dahua-campus-94s-v5.mp4` 與 `verification.json`。
+- `dahua-campus-94s-v5.mp4`：無配樂的 3D 原始成片；`verification.json` 記錄其規格與解碼檢查。
+- `dahua-campus-94s-v5-school-song.mp4`：含封面、配樂和燒錄歌詞的交付版；`school-song-verification.json` 記錄影像、音訊及同步檢查。
+- `music/`、`finish_school_song.py`：原始 MP3、提供的歌詞、可編輯字幕與封面圖層、合成設定。
+- `video-review/` 與 `music/lyrics-review.jpg`：從實際編碼成片擷取的檢查畫面。
 
 ## 再製
 
@@ -32,6 +43,8 @@ blender -b --python build_refined_scene.py
 blender -b dahua-campus-v5.blend --python render_preflight.py
 blender -b dahua-campus-v5.blend --python render_video.py
 python3 verify_video.py
+FFMPEG_CAPTION=/path/to/ffmpeg-with-libass python3 finish_school_song.py --render
+python3 verify_school_song.py
 ```
 
 需要 Blender 與 FFmpeg。`.render/` 保留完成的分鏡段；只有模型 SHA-256 和設定一致才接受續跑，片段的畫格數及時間刻度經核對後才合併。
@@ -40,4 +53,10 @@ python3 verify_video.py
 
 新立面與服裝依校方照片補強；Maps 改用同一 Chrome 新分頁後恢復，重新核對整體、後側小學與球場，並新增後側停車區、東側停車格及橢圓花台。淺藍正式服的確切年級歸屬未能由照片確認，部分尺寸與遮蔽結構仍有推估。見 SOURCES.md。
 
-人物支撐腳有 27 次取樣，鞋底偏差在約 8 毫米內；此檢查不能證明全片每一步都沒有碰撞。全部鏡頭均有可見預覽，完稿影片仍會另做解碼與規格驗證。
+人物支撐腳有 27 次取樣，鞋底偏差在約 8 毫米內；此檢查不能證明全片每一步都沒有碰撞。全部鏡頭均有可見預覽，兩版成片均已通過完整解碼，皆為 2256 格、94 秒、1440p／24 fps。已抽查 15 段鏡頭中點、原問題時點前後及行走連續畫格；字幕版另抽查封面與全部 18 組歌詞。這些抽查不能證明每一格都沒有幾何問題。
+
+## 校歌與歌詞
+
+音樂由使用者提供，原檔 94.066938 秒；維持原速，以 94 秒為交付長度，僅裁末端約 67 毫秒，末尾淡出 0.35 秒。音量增加 2.5 dB，輸出 AAC 256 kbps／44.1 kHz／立體聲。封面疊在開場 0–6.5 秒，5.75 秒起淡出，因此不增加片長。
+
+以本機 Whisper large-v3 交叉注意力 DTW 找演唱時間，文字逐句改回使用者提供的繁體版本，排除前奏和尾奏的辨識重複，18 組分句未遺漏任何提供的中文字。字幕以分句顯示，並非逐字卡拉 OK。未經人工聽審，不宣稱音素級精準；可直接編輯 `music/lyrics-timing.json` 或 SRT／ASS。三個演唱區間的原音與成片音訊互相關偏移皆為 0 秒；這證明配樂合成未移位，不能等同人工歌詞聽審。
