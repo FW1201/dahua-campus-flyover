@@ -1,6 +1,5 @@
 # v4：Maps 校園配置與校舍深度精修
 
-> 模型與素材已完成。94 秒影片正在逐格輸出；影片與 verification.json 連結會於渲染完成後提供。
 
 94 秒、1920×1080、24 fps，13 段鏡頭，含整體飛越、近距離校舍巡覽、走廊及後側雙語小學。採用 Blender 5.4.0 Alpha、Eevee、AgX，48 samples，以逐格 PNG 串流編碼 H.264。
 
@@ -11,7 +10,7 @@
 - [建模程式](build_refined_scene.py)、[影片輸出](render_video.py)
 - [鏡頭配置](shots.json)、[比例與位置觀察](site-plan-observations.json)
 - [來源與推估範圍](SOURCES.md)、[照片檔案索引與雜湊](reference-manifest.json)
-- [影片完整解碼及規格驗證](verification.json)
+- [影片完整解碼及規格驗證](verification.json)、[13 段成片抽樣總覽](final-video-contact.jpg)
 
 使用者已確認維持日景，重點為完善校舍、配置與地形細節。
 
@@ -36,10 +35,10 @@ blender -b dahua-campus-v4.blend --python render_video.py
 python3 verify_video.py
 ```
 
-渲染需要 FFmpeg 與可用圖形裝置；macOS Metal 需在允許存取 GPU 的環境執行。render_video.py 支援 CAMPUS_FRAME_START、CAMPUS_FRAME_END 和 CAMPUS_OUTPUT_PATH，方便分段或續接；分段後必須重做完整影片驗證。模型字樣已轉為幾何，沒有打包系統字型。所有紋理為程式材質，模型可獨立開啟。
+渲染需要 FFmpeg 與可用圖形裝置；macOS Metal 需在允許存取 GPU 的環境執行。輸出時先保留可恢復的 MPEG-TS 中間檔，成功後再封裝 MP4。render_video.py 支援 CAMPUS_FRAME_START、CAMPUS_FRAME_END 和 CAMPUS_OUTPUT_PATH，方便分段或續接；分段後必須重做完整影片驗證。模型字樣已轉為幾何，沒有打包系統字型。所有紋理為程式材質，模型可獨立開啟。
 
 ## 驗證與限制
 
-每段起、中、終點實際渲染檢視；2256 格相機路徑檢查主要建築體積，走廊內景是有意進入。體積檢查不涵蓋全部樹木與遮棚，故另以可見預覽排除遮擋。完稿影片重新抽樣檢查並做完整解碼。
+每段起、中、終點實際渲染檢視；2256 格相機路徑檢查主要建築體積，走廊內景是有意進入。體積檢查不涵蓋全部樹木與遮棚，故另以可見預覽排除遮擋。完稿影片抽查全部 13 段中點畫格，並通過完整解碼：94.000 秒、2256 格、24 fps、1920×1080。
 
 本專案是來源影像重建的建築視覺化。實際尺寸、操場深度、背面與被遮蔽結構仍有推估；不是實測模型、攝影測量成果或完全寫實數位分身。來源差異與推估詳見 SOURCES.md。
